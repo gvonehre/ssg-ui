@@ -85,7 +85,8 @@
         border-radius: 15px;
         color: var(--bg1);
         background-color: var(--orange);
-        font-family: 'Arial bold';
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
         /*border: solid; */
         border-width: 2px;
         border-style: solid;
@@ -129,12 +130,15 @@
     }
     .text{
         font-size: 60px;
-        font-family: 'Arial bold', sans-serif;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
         fill: var(--orange);
     }
     #curve{
         fill: transparent;
     }
+
+    /*-------------styling processing dots-------------------*/
     @keyframes dotPulse {
         0% {opacity: 0.2;}
         50% {opacity: 1;}

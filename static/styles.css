@@ -1,5 +1,8 @@
     :root{
+        /*Definition of Colors*/
         --orange:#E66A21;
+        --bg1: #103350;
+        --bg2: #0e3d66;
     }
     body {
         display: flex;
@@ -9,7 +12,7 @@
         min-height: 100vh;
         margin: 0;
         /*background-color: #103350;*/
-        background: linear-gradient(to bottom, #103350 50%, #0e3d66 50%);
+        background: linear-gradient(to bottom, var(--bg1) 50%, var(--bg2) 50%);
     }
     body::before {
         content: ""; /* Necessary for the pseudo-element to be generated */
@@ -31,7 +34,7 @@
         margin-bottom: 50px;
         margin-top: 0;
         font-size: 70px;
-        background: linear-gradient(to top, var(--orange), #103350);
+        background: linear-gradient(to top, var(--orange), var(--bg1));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -69,6 +72,8 @@
         margin-top: 30px;
         text-align: center;
     }
+
+    /*----------------Buttons-------------------*/
     #homeButton{
         width: 40px;
     }
@@ -78,7 +83,7 @@
         width: 120px;
         height: 40px;
         border-radius: 15px;
-        color: #103350;
+        color: var(--bg1);
         background-color: var(--orange);
         font-family: 'Arial bold';
         /*border: solid; */
@@ -104,9 +109,9 @@
     .active {
         display: block;
     }
-    /* Example styling for the loading indicator */
+    /*Styling for the loading indicator */
     .loading {
-        border: 16px solid #103350; /* #f3f3f3*/
+        border: 16px solid var(--bg1); /* #f3f3f3*/
         border-top: 16px solid var(--orange);
         border-radius: 50%;
         width: 100px;
@@ -118,8 +123,7 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
-    input,
-    label {
+    input, label {
         color: var(--orange);
         font-family: 'Arial', sans-serif;
     }

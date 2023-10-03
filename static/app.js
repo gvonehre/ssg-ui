@@ -1,3 +1,4 @@
+// TODO: Clean Code
 function startProcess() {
         // Switch to processing screen
     document.getElementById('uploadScreen').classList.remove('active');

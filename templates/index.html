@@ -8,17 +8,17 @@
 <link rel="stylesheet" type="text/css" href="../static/styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <body>
-      <div id="upperContainer">
-      <svg width="800" height="300">
+<div id="upperContainer">
+    <svg width="800" height="300">
         <path id="curve" d="M 0 300 C 0 300, 400 0, 800 300"></path>
-          <text class="text" text-anchor="middle">
-              <textPath class="text__path" href="#curve" startOffset="50%">Data Enrichment Tool</textPath>
-          </text>
-      </svg>
-<!--    <h1 class="color-wave-text">Data Enrichment Tool</h1>-->
+        <text class="text" text-anchor="middle">
+            <textPath class="text__path" href="#curve" startOffset="50%">Data Enrichment Tool</textPath>
+        </text>
+    </svg>
+    <!--    <h1 class="color-wave-text">Data Enrichment Tool</h1>-->
     <img src="{{ url_for('static', filename='ssglogo.png') }}" alt="Logo" id="logo">
-    </div>
-  <div id="lowerContainer">
+</div>
+<div id="lowerContainer">
     <div id="contentContainer">
         <div id="uploadScreen" class="screen active">
             <h2>Upload Excel File</h2>
@@ -28,7 +28,9 @@
             <button id="startButton" class="btn button-hover-effect" onclick="startProcess()">Start</button>
         </div>
         <div id="processingScreen" class="screen">
-            <h2>Processing<span class="dot" id="dot1">.</span><span class="dot" id="dot2">.</span><span class="dot" id="dot3">.</span></h2>
+            <h2>Processing<span class="dot" id="dot1">.</span><span class="dot" id="dot2">.</span><span class="dot"
+                                                                                                        id="dot3">.</span>
+            </h2>
             <div class="loading"></div>
         </div>
 
@@ -41,7 +43,7 @@
             </button>
         </div>
     </div>
-    </div>
-    <script src="../static/app.js"></script>
+</div>
+<script src="../static/app.js"></script>
 </body>
 </html>
